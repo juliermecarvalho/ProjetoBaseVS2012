@@ -11,14 +11,12 @@ namespace ProjetoBase.Vs2012.Persistencia.Lib
         public DbSet<Pessoa> Pessoas { get; set; } 
 
         public Contexto()
-            : base(@"Data Source=.\sqlexpress;Initial Catalog=Base;Integrated Security=True")
+            : base("name=Base")
         {
             
         }
 
-        internal Contexto(string stringDeConexao):base(stringDeConexao)
-        {
-        }
+      
 
         /// <summary>
         /// Metódos sé para os testes

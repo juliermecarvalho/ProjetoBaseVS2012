@@ -11,15 +11,7 @@ namespace ProjetoBase.Vs2012.Persistencia.Lib
             Contexto = new Contexto();
         }
 
-        /// <summary>
-        /// Atenção contrutor usado só para os testes
-        /// </summary>
-        /// <param name="stringDeConexao"></param>
-        internal UnidadeDeTrabalho(string stringDeConexao)
-        {
-            Contexto = new Contexto(stringDeConexao);
-        }
-
+       
         /// <summary>
         /// Metódos só usado para os testes
         /// </summary>

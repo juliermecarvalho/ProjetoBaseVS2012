@@ -10,14 +10,7 @@ namespace ProjetoBase.Vs2012.Infra
 
         public static Fabrica Instancia
         {
-            get
-            {
-                if (_fInstancia == null)
-                    _fInstancia = new Fabrica();
-
-                return _fInstancia;
-            }
-            
+            get { return _fInstancia ?? (_fInstancia = new Fabrica()); }
         }
 
  
@@ -30,17 +23,7 @@ namespace ProjetoBase.Vs2012.Infra
             this.Kernel = new StandardKernel(persistencia);
         }
 
-        /// <summary>
-        /// esse metódo só existe para os teste!!
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="stringDeConexao"></param>
-        /// <returns></returns>
-        internal T Obter<T>(string stringDeConexao)
-        {
-            return this.Kernel.Get<T>(new ConstructorArgument("stringDeConexao", stringDeConexao));
-        }
-
+       
         public T Obter<T>()
         {
             return this.Kernel.Get<T>();
