@@ -15,6 +15,7 @@ namespace ProjetoBase.Vs2012.Persistencia.Teste.RepositorioTeste
     {
         
         private int _id;
+
         /// <summary>
         /// É criado um banco de dados somente para os teste
         /// </summary>
@@ -28,6 +29,7 @@ namespace ProjetoBase.Vs2012.Persistencia.Teste.RepositorioTeste
                     deTrabalho.CriarBanco();
             }
         }
+
         /// <summary>
         /// É excluido o banco de dados de teste
         /// </summary>
@@ -96,8 +98,6 @@ namespace ProjetoBase.Vs2012.Persistencia.Teste.RepositorioTeste
                 IRepositorioDePessoas repositorioDePessoas =
                     Fabrica.Instancia.Obter<IRepositorioDePessoas>(unidadeDeTrabalho);
 
-                
-
                 Pessoa pessoa = repositorioDePessoas.Obter(_id);
                 repositorioDePessoas.Deletar(pessoa);
                 unidadeDeTrabalho.Commit();
@@ -107,6 +107,5 @@ namespace ProjetoBase.Vs2012.Persistencia.Teste.RepositorioTeste
             }
         }
 
-        
     }
 }
