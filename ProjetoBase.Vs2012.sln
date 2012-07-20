@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoBase.Vs2012.Aplicaca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoBase.Vs2012.Infra.Teste", "ProjetoBase.Vs2012.Infra.Teste\ProjetoBase.Vs2012.Infra.Teste.csproj", "{C9C6256D-33DF-4CFA-81B6-7E1AA3909943}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoBase.Vs2012.Web.Teste", "ProjetoBase.Vs2012.Web.Teste\ProjetoBase.Vs2012.Web.Teste.csproj", "{4FDDC886-3B6A-4DE2-88BE-5FA5752C46CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4DD5118D-A164-4830-A965-4FAB37863B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DD5118D-A164-4830-A965-4FAB37863B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DD5118D-A164-4830-A965-4FAB37863B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDDC886-3B6A-4DE2-88BE-5FA5752C46CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDDC886-3B6A-4DE2-88BE-5FA5752C46CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDDC886-3B6A-4DE2-88BE-5FA5752C46CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDDC886-3B6A-4DE2-88BE-5FA5752C46CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5E388A80-8754-4F96-83C5-84E44F59A78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5E388A80-8754-4F96-83C5-84E44F59A78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E388A80-8754-4F96-83C5-84E44F59A78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
