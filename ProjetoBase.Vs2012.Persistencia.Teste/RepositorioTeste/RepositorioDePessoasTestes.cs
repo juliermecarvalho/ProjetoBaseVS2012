@@ -80,7 +80,7 @@ namespace ProjetoBase.Vs2012.Persistencia.Teste.RepositorioTeste
 
 
 
-                IEnumerable<Pessoa> pessoas = repositorioDePessoas.listar().ToList();
+                IEnumerable<Pessoa> pessoas = repositorioDePessoas.Listar().ToList();
 
 
 

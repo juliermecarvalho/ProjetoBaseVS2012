@@ -35,7 +35,7 @@ namespace ProjetoBase.Vs2012.Persistencia.Repositorios.Base
             this.Contexto.Set<TEntidade>().Remove(entidade);
         }
 
-        public IQueryable<TEntidade> listar()
+        public IQueryable<TEntidade> Listar()
         {
             return this.Contexto.Set<TEntidade>();
         }

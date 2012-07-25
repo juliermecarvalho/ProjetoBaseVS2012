@@ -5,8 +5,8 @@ namespace ProjetoBase.Vs2012.Dominio.Entidades
 {
     public class Pessoa: Entidade
     {
-        public string Nome { get; set; }
-        public Sexo Sexo { get; set; }
+        public virtual string Nome { get; set; }
+        public virtual Sexo Sexo { get; set; }
 
     }
 }

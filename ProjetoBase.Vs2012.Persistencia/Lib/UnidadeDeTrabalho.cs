@@ -15,7 +15,7 @@ namespace ProjetoBase.Vs2012.Persistencia.Lib
         /// <summary>
         /// Metódos só usado para os testes
         /// </summary>
-        internal void CriarBanco()
+        internal virtual void CriarBanco()
         {
             this.Contexto.CriarBanco();
         }
@@ -23,12 +23,12 @@ namespace ProjetoBase.Vs2012.Persistencia.Lib
         /// <summary>
         /// Metódos só usado para os testes
         /// </summary>
-        internal void ExcluirBanco()
+        internal virtual void ExcluirBanco()
         {
             this.Contexto.ExcluirBanco();
         }
 
-        public void Commit()
+        public virtual void Commit()
         {
             this.Contexto.SaveChanges();
         }
