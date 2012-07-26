@@ -10,7 +10,7 @@ namespace ProjetoBase.Vs2012.Persistencia.Repositorios.Base
     {
         private readonly IUnidadeDeTrabalho _unidadeDeTrabalho;
 
-        protected Contexto Contexto
+        protected virtual Contexto Contexto
         {
             get { return ((UnidadeDeTrabalho) _unidadeDeTrabalho).Contexto; }
         }
@@ -20,22 +20,29 @@ namespace ProjetoBase.Vs2012.Persistencia.Repositorios.Base
             _unidadeDeTrabalho = unidadeDeTrabalho;
         }
 
-        public TEntidade Obter(int id)
+        public virtual TEntidade Obter(int id)
         {
             return this.Contexto.Set<TEntidade>().Find(id);
         }
 
-        public void Salvar(TEntidade entidade)
+        public virtual void Salvar(TEntidade entidade)
         {
-            this.Contexto.Set<TEntidade>().Add(entidade);
+            if(entidade.Id == 0)
+                this.Contexto.Set<TEntidade>().Add(entidade);
         }
 
-        public void Deletar(TEntidade entidade)
+        public virtual void Deletar(int id)
+        {
+            var entidade = this.Obter(id);
+            this.Deletar(entidade);
+        }
+
+        public virtual void Deletar(TEntidade entidade)
         {
             this.Contexto.Set<TEntidade>().Remove(entidade);
         }
 
-        public IQueryable<TEntidade> Listar()
+        public virtual IQueryable<TEntidade> Listar()
         {
             return this.Contexto.Set<TEntidade>();
         }

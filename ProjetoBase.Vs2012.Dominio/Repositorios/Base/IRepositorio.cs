@@ -8,6 +8,7 @@ namespace ProjetoBase.Vs2012.Dominio.Repositorios.Base
         TEntidade Obter(int id);
         void Salvar(TEntidade entidade);
         void Deletar(TEntidade entidade);
+        void Deletar(int id);
         IQueryable<TEntidade> Listar();
 
     }
